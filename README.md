@@ -1,4 +1,4 @@
-# Web-ja-hybriditeknologiat-mobiiliohjelmoinnissa-viikkotehtava-4
+# Web-ja-hybriditeknologiat-mobiiliohjelmoinnissa-viikkotehtava-7
 
 ## Assingment. Simple Todolist with reducer
 

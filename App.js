@@ -1,8 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
-import TodoList from './components/TodoList';
-import Constants from 'expo-constants';
+import { StatusBar } from 'expo-status-bar'
+import { StyleSheet, View } from 'react-native'
+import React from 'react'
+import TodoList from './components/TodoList'
+import Constants from 'expo-constants'
 
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
       <StatusBar style="auto" />
       <TodoList />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     margin: 16,
   }
-});
+})

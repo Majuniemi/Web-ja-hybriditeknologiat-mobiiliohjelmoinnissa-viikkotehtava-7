@@ -1,12 +1,12 @@
-import React, { useReducer, useState } from 'react';
-import { View, StyleSheet, Pressable, TextInput } from 'react-native';
-import { FlatList } from 'react-native';
-import { Text } from 'react-native';
+import React, { useReducer, useState } from 'react'
+import { View, StyleSheet, Pressable, TextInput } from 'react-native'
+import { FlatList } from 'react-native'
+import { Text } from 'react-native'
 
 export default function TodoList() {
     const initialState = {
         todos: [],
-    };
+    }
 
     const todoReducer = (state, action) => {
         switch (action.type) {
@@ -23,8 +23,8 @@ export default function TodoList() {
         }
     }
 
-    const [state, dispatch] = useReducer(todoReducer, initialState);
-    const [text, setText] = useState('');
+    const [state, dispatch] = useReducer(todoReducer, initialState)
+    const [text, setText] = useState('')
 
     return (
         <>
@@ -37,11 +37,11 @@ export default function TodoList() {
                 />
                 <Pressable
                     onPress={() => {
-                        if (!text.trim()) return;
+                        if (!text.trim()) return
                         dispatch({
                             type: 'ADD_TODO',
                             payload: { id: Date.now().toString(), text },
-                        });
+                        })
                         setText('')
                     }}
                 >
@@ -65,7 +65,7 @@ export default function TodoList() {
                 />
             </View>
         </>
-    );
+    )
 }
 
 const styles = StyleSheet.create({
@@ -90,4 +90,4 @@ const styles = StyleSheet.create({
         fontSize: 24,
         marginBottom: 24,
     },
-});
+})
